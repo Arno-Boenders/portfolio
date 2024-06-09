@@ -1,6 +1,5 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 
 export default function Root() {
@@ -10,7 +9,6 @@ export default function Root() {
       <main>
         <Outlet />
       </main>
-      <Footer />
     </div>
   );
 }
