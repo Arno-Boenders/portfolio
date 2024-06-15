@@ -16,8 +16,8 @@ export default function Home() {
           </strong>
         </div>
       </div>
-      <div className="container mx-auto mb:px-20">
-        <div className="flex flex-col md:flex-row gap-5 md:gap-32 mb-10 items-center">
+      <div className="mx-10 md:px-20 xl:mx-60">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-96 mb-10 items-center justify-between">
           <p>
             Ik ben een enthousiaste programmeringsstudent aan de Artevelde
             Hogeschool, verrijkt met een solide basis in webontwikkeling van
@@ -37,17 +37,17 @@ export default function Home() {
             <Card
               image="/assets/img/kamperen-in-vr.jpg"
               title="Kamperen in VR"
-              link="https://example.com"
+              link="/projects/kamperen-in-vr"
             />
             <Card
-              image="https://via.placeholder.com/400"
-              title="Sample Card Title"
-              link="https://example.com"
+              image="/assets/img/wings-of-belgium.svg"
+              title="Wings of Belgium"
+              link="/projects/wings-of-belgium"
             />
             <Card
-              image="https://via.placeholder.com/400"
-              title="Sample Card Title"
-              link="https://example.com"
+              image="/assets/img/flappy-teachers.gif"
+              title="Flappy Teachers"
+              link="/projects/flappy-teachers"
             />
           </div>
         </div>
