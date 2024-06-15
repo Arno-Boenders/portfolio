@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "kamperen-in-vr": {
+      "details": "Dit is een VR 'game' die oorspronkelijk gemaakt werd voor een vzw die zich bezig hield met minder valide mensen.\nDoor een niet zo goede communicatie is het uiteindelijk een VR game geworden die objectives heeft en leuke activiteiten om te doen.\nOok zijn er speciale plaatsen waar naartoe gegaan kan worden om een schitterend uitzicht te hebben.\n\nWe hebben gekozen om deze opdracht te maken met Unity, omdat dit een makkelijk platform is om mee te leren werken.\nDe gekozen taal om in te programmeren was C# en het project hebben we tot zijn einde gebracht met behulp van de XR Toolkit die in Unity is ingebouwd als plugin.\nVoor de assets hebben we er via de Unity store gekocht en een paar zelf gemaakt via Blender.",
+      "technologies": ["Blender", "Unity", "C#", "XR Toolkit"],
+      "image_url": "/assets/img/kamperen-in-vr.jpg"
+    },
+    "wings-of-belgium": {
+      "details": "Deze app is ontwikkeld als school opdracht voor de belgische luchtmacht. De applicatie is gemaakt in een groep van 4 voor het vak @work 2 op Arteveldehogeschool.\n\n De bedoeling van de app is om meer te weten te komen over de verschillende beroepen binnen de belgische luchtmacht. Dit hebben we proberen waar te maken via games die je kan spelen. \nVoor je aan de games kan beginnen moet je namelijk aan de hand van de missie uitleg je team samenstellen. Hiermee leer je wat er allemaal nodig is voor missies te voltooien.\nMomenteel zijn er maar 2 missies, maar dit valt zeker uit te breiden. \n\nEr is ook een pagina voorzien voor alle laatste nieuws meldingen binnen de defentie om zo op de hoogte te blijven van alle nieuwigheden.",
+      "technologies": ["React", "Graphql", "Hygraph", "Material UI"],
+      "image_url": "/assets/img/wings-of-belgium.svg"
+    },
+    "flappy-teachers": {
+      "details": "Welkom bij Flappy Teachers, een boeiend en leuk arcade-stijl spel geïnspireerd door de klassieke Flappy Bird. In dit spel help je de leraar, ons unieke vogelkarakter, om door een reeks uitdagende obstakels te navigeren. \n\nIn Flappy Teachers besturen spelers de leraar door op de spatiebalk of de pijltjestoets omhoog te drukken om hem te laten springen en vliegen. Het doel is om tussen de rijen groene pijpen door te vliegen zonder ermee in botsing te komen. Terwijl je door elke set pijpen vliegt, worden geluiden afgespeeld om de ervaring te verbeteren, en het spel wordt geleidelijk aan steeds uitdagender.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "image_url": "/assets/img/flappy-teachers.gif"
+    }
+  }
+}
