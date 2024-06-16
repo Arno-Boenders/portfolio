@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../components/Card";
 import Skills from "../components/Skills";
 import "../css/styles.css"; // Make sure to import your CSS file
+import EmailForm from "../components/EmailForm";
 
 export default function Home() {
   return (
@@ -53,6 +54,10 @@ export default function Home() {
               link="/projects/flappy-teachers"
             />
           </div>
+        </div>
+        <div className="my-40">
+          <h2 className="text-2xl sm:text-6xl my-10 font-bold">Contact</h2>
+          <EmailForm />
         </div>
       </div>
     </div>
