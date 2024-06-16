@@ -19,14 +19,29 @@ export default function DetailProject() {
         <div className="flex flex-col">
           <img src={project.image_url} alt={slug.replace(/-/g, " ")} />
           <div>
-            <h2 className="text-2xl uppercase font-medium mb-2">Technologies:</h2>
+            <h2 className="text-2xl uppercase font-medium mb-2">
+              Technologies:
+            </h2>
             {project.technologies && <p>{project.technologies.join(", ")}</p>}
           </div>
         </div>
 
         <div>
-          <h2 className="text-2xl uppercase font-medium mb-2">Over het project:</h2>
+          <h2 className="text-2xl uppercase font-medium mb-2">
+            Over het project:
+          </h2>
           <p>{project.details}</p>
+          {slug === "kamperen-in-vr" && (
+            <div>
+              <h2 className="text-2xl uppercase font-medium mb-2">Demo:</h2>
+              <iframe
+                width="560"
+                height="315"
+                src="https://youtu.be/d4P7aXXNqW0?si=FKWgsiBbuxbPMsio"
+                title="YouTube video player"
+              ></iframe>
+            </div>
+          )}
         </div>
       </div>
     </div>
