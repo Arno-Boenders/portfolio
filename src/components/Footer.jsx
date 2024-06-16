@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
     <footer>
+      <h2 className="text-2xl sm:text-4xl mb-5 font-bold text-center">Socials</h2>
       <nav className="flex justify-center gap-6 mb-5">
         <NavLink
           to={{ pathname: "https://github.com/Arno-Boenders" }}
