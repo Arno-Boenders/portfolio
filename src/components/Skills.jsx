@@ -47,13 +47,17 @@ export default function Skills() {
           className="Tilt"
           options={{ max: 25, scale: 1.05 }}
         >
-          <div className="Tilt-inner flex flex-col items-center transition duration-300 ease-in-out transform rounded-xl hover:shadow-2xl">
-            <img
-              src={skill.logo}
-              alt={skill.name}
-              className="w-auto h-16 mb-2 p-2"
-            />
-            <span className="text-lg font-medium">{skill.name}</span>
+          <div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+            <div className="flex flex-col items-center bg-gray-800 transition duration-300 ease-in-out transform rounded-md hover:shadow-2xl">
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className="w-auto h-16 mb-2 p-2"
+              />
+              <span className="text-lg font-medium text-white">
+                {skill.name}
+              </span>
+            </div>
           </div>
         </Tilt>
       ))}
