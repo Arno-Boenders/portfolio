@@ -1,0 +1,6 @@
+/* styles.css */
+@media (max-width: 767px) {
+  .bg-custom-position {
+    background-position: calc(100% - -16rem) center;
+  }
+}
