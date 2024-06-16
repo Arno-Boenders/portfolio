@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Card({ image, title, link }) {
   return (
@@ -8,9 +9,9 @@ export default function Card({ image, title, link }) {
       </div>
       <div className="h-1/3 px-6 py-4 flex flex-col justify-between">
         <div className="font-bold text-xl mb-2">{title}</div>
-        <a href={link} className="text-orange-300 hover:underline">
+        <NavLink to={link} className="text-orange-300 hover:underline">
           Meer
-        </a>
+        </NavLink>
       </div>
     </div>
   );
