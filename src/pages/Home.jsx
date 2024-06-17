@@ -59,7 +59,8 @@ export default function Home() {
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">Skills</h2>
           <Skills />
         </div>
-        <div id="work" className="my-40">
+        <div id="work"></div>
+        <div className="my-40">
           <h2 className="text-2xl sm:text-6xl mb-5 font-bold">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 xl:gap-20 justify-items-center">
             {projects.map((project, index) => (
