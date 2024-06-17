@@ -12,11 +12,11 @@ export default function Navigation() {
         <NavLink className="hover:text-orange-300" to={ROUTES.home.path}>
           {ROUTES.home.title}
         </NavLink>
-        <a className="hover:text-orange-300" href={ROUTES.work.path}>
-          {ROUTES.work.title}
-        </a>
         <a className="hover:text-orange-300" href={ROUTES.about.path}>
           {ROUTES.about.title}
+        </a>
+        <a className="hover:text-orange-300" href={ROUTES.work.path}>
+          {ROUTES.work.title}
         </a>
       </nav>
     )
