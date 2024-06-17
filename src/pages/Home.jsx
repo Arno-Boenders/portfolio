@@ -3,10 +3,29 @@ import Card from "../components/Card";
 import Skills from "../components/Skills";
 import "../css/styles.css"; // Make sure to import your CSS file
 import EmailForm from "../components/EmailForm";
+import projectsData from "../data/projects.json"; // Adjust the path as necessary
+import { Helmet } from "react-helmet";
 
 export default function Home() {
+  const projects = Object.keys(projectsData.projects).map((key) => {
+    const project = projectsData.projects[key];
+    return {
+      image: project.image_url,
+      title: key
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase()),
+      link: `/projects/${key}`,
+    };
+  });
+
   return (
     <div className="flex flex-col">
+      <div className="application">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Arno Boenders</title>
+        </Helmet>
+      </div>
       <div
         className="relative mb-10 min-h-screen w-full bg-cover md:bg-right xl:bg-center bg-custom-position"
         style={{ backgroundImage: "url('/assets/img/hero-image.jpg')" }}
@@ -25,9 +44,14 @@ export default function Home() {
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">About me</h2>
           <div className="flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-20 mb-10 items-center md:items-start justify-between">
             <p className="text-base sm:text-lg md:text-xl">
-              Ik ben een enthousiaste programmeringsstudent aan de Artevelde
-              Hogeschool, verrijkt met een solide basis in webontwikkeling van
-              Odisee, gedreven om digitale innovaties te creëren.
+              Hallo, ik ben Arno Boenders, 22 jaar oud en ik studeer
+              programmeren aan de Arteveldehogeschool. Mijn doel is om een
+              fullstack developer te worden. Ik heb al kennis van verschillende
+              nuttige programmeertalen zoals HTML, CSS, React, JavaScript en
+              PHP. Naast mijn passie voor programmeren, ben ik ook sportief en
+              houd ik van een actieve levensstijl. Ik kijk ernaar uit om mijn
+              vaardigheden verder te ontwikkelen en mijn dromen in de IT-wereld
+              waar te maken.
             </p>
           </div>
         </div>
@@ -37,22 +61,16 @@ export default function Home() {
         </div>
         <div id="work" className="my-40">
           <h2 className="text-2xl sm:text-6xl mb-5 font-bold">Projects</h2>
-          <div className="flex flex-col lg:flex-row gap-8 md:gap-10 xl:gap-20 xl:w-full justify-between items-center">
-            <Card
-              image="/assets/img/kamperen-in-vr.jpg"
-              title="Kamperen in VR"
-              link="/projects/kamperen-in-vr"
-            />
-            <Card
-              image="/assets/img/wings-of-belgium.svg"
-              title="Wings of Belgium"
-              link="/projects/wings-of-belgium"
-            />
-            <Card
-              image="/assets/img/flappy-teachers.gif"
-              title="Flappy Teachers"
-              link="/projects/flappy-teachers"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 xl:gap-20 justify-items-center">
+            {projects.map((project, index) => (
+              <div key={index} className="flex justify-center w-full">
+                <Card
+                  image={project.image}
+                  title={project.title}
+                  link={project.link}
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div className="my-40">
