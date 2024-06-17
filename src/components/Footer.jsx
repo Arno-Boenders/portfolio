@@ -4,10 +4,12 @@ import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
     <footer>
-      <h2 className="text-2xl sm:text-4xl mb-5 font-bold text-center">Socials</h2>
+      <h2 className="text-2xl sm:text-4xl mb-5 font-bold text-center">
+        Socials
+      </h2>
       <nav className="flex justify-center gap-6 mb-5">
         <NavLink
-          to={{ pathname: "https://github.com/Arno-Boenders" }}
+          to="https://github.com/Arno-Boenders"
           target="_blank"
           style={{ display: "flex", alignItems: "center" }}
         >
@@ -20,9 +22,7 @@ export default function Footer() {
           </svg>
         </NavLink>
         <NavLink
-          to={{
-            pathname: "https://www.linkedin.com/in/arno-boenders-816117228/",
-          }}
+          to="https://www.linkedin.com/in/arno-boenders-816117228/"
           target="_blank"
           style={{ display: "flex", alignItems: "center" }}
         >
@@ -35,7 +35,7 @@ export default function Footer() {
           </svg>
         </NavLink>
         <NavLink
-          to={{ pathname: "https://www.instagram.com/arno_boenders/" }}
+          to="https://www.instagram.com/arno_boenders/"
           target="_blank"
           style={{ display: "flex", alignItems: "center" }}
         >
