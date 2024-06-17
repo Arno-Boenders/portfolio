@@ -8,12 +8,22 @@
     "wings-of-belgium": {
       "details": "Deze app is ontwikkeld als school opdracht voor de belgische luchtmacht. De applicatie is gemaakt in een groep van 4 voor het vak @work 2 op Arteveldehogeschool.\n\n De bedoeling van de app is om meer te weten te komen over de verschillende beroepen binnen de belgische luchtmacht. Dit hebben we proberen waar te maken via games die je kan spelen. \nVoor je aan de games kan beginnen moet je namelijk aan de hand van de missie uitleg je team samenstellen. Hiermee leer je wat er allemaal nodig is voor missies te voltooien.\nMomenteel zijn er maar 2 missies, maar dit valt zeker uit te breiden. \n\nEr is ook een pagina voorzien voor alle laatste nieuws meldingen binnen de defentie om zo op de hoogte te blijven van alle nieuwigheden.",
       "technologies": ["React", "Graphql", "Hygraph", "Material UI"],
-      "image_url": "/assets/img/wings-of-belgium.svg"
+      "image_url": "/assets/img/wings-of-belgium.svg",
+      "github": "https://github.com/Arno-Boenders/wings-of-belgium",
+      "link": "https://wings-of-belgium.onrender.com/"
     },
     "flappy-teachers": {
       "details": "Welkom bij Flappy Teachers, een boeiend en leuk arcade-stijl spel geïnspireerd door de klassieke Flappy Bird. In dit spel help je de leraar, ons unieke vogelkarakter, om door een reeks uitdagende obstakels te navigeren. \n\nIn Flappy Teachers besturen spelers de leraar door op de spatiebalk of de pijltjestoets omhoog te drukken om hem te laten springen en vliegen. Het doel is om tussen de rijen groene pijpen door te vliegen zonder ermee in botsing te komen. Terwijl je door elke set pijpen vliegt, worden geluiden afgespeeld om de ervaring te verbeteren, en het spel wordt geleidelijk aan steeds uitdagender.",
       "technologies": ["Javascript", "HTML", "CSS"],
-      "image_url": "/assets/img/flappy-teachers.gif"
+      "image_url": "/assets/img/flappy-teachers.gif",
+      "github": "https://github.com/Arno-Boenders/Flappy-teachers",
+      "link": "https://pgmgent-atwork2.github.io/project-1-workshop-start-2-code-daria-arno/"
+    },
+    "studio-clean": {
+      "details": "Deze website was een school project voor UX-Prototyping op arteveldehogeschool. Het was de bedoeling om gebruik te maken van templating libraries. Hier hebben we gebruik gemaakt van Nunjucks en Eleventy. \n\nHet design hadden we gekregen van de docent en moesten we zo goed mogelijk namaken.",
+      "technologies": ["Nunjucks", "Eleventy", "Markdown", "CSS"],
+      "image_url": "/assets/img/studio-clean.png",
+      "github": "https://github.com/Arno-Boenders/Clean"
     }
   }
 }
