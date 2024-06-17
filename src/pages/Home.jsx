@@ -19,7 +19,7 @@ export default function Home() {
   });
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" id="home">
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
@@ -74,7 +74,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="my-40">
+        <div className="my-40" id="contact">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">Contact</h2>
           <EmailForm />
         </div>

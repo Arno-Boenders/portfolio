@@ -1,6 +1,6 @@
 export const ROUTES = {
   home: {
-    path: "/",
+    path: "#home",
     title: "Home",
   },
   work: {
