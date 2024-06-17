@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, NavLink } from "react-router-dom";
 import projectsData from "../data/projects.json";
+import { Helmet } from "react-helmet";
 
 export default function DetailProject() {
   const { slug } = useParams();
@@ -12,6 +13,12 @@ export default function DetailProject() {
 
   return (
     <div className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+      <div className="application">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Projects | {slug.replace(/-/g, " ")}</title>
+        </Helmet>
+      </div>
       <NavLink to="/#work" className="hover:text-orange-300 mb-4 inline-block">
         &larr; Back to Home
       </NavLink>
