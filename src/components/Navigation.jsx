@@ -18,6 +18,9 @@ export default function Navigation() {
         <a className="hover:text-orange-300" href={ROUTES.work.path}>
           {ROUTES.work.title}
         </a>
+        <a className="hover:text-orange-300" href={ROUTES.contact.path}>
+          {ROUTES.contact.title}
+        </a>
       </nav>
     )
   );
