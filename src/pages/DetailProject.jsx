@@ -27,6 +27,32 @@ export default function DetailProject() {
             </h2>
             {project.technologies && <p>{project.technologies.join(", ")}</p>}
           </div>
+          {project.github && (
+            <div className="my-5">
+              <h2 className="text-2xl uppercase font-medium mb-2">Github:</h2>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-500"
+              >
+                {project.github}
+              </a>
+            </div>
+          )}
+          {project.link && (
+            <div className="my-5">
+              <h2 className="text-2xl uppercase font-medium mb-2">Link:</h2>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-500"
+              >
+                {project.link}
+              </a>
+            </div>
+          )}
         </div>
 
         <div>
