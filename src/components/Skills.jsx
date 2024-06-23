@@ -45,10 +45,9 @@ export default function Skills() {
         <Tilt
           key={skill.name}
           className="Tilt"
-          options={{ max: 25, scale: 1.05 }}
         >
-          <div className="rounded-md h-48 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
-            <div className="flex flex-col justify-center h-full items-center bg-gray-800 transition duration-300 ease-in-out transform rounded-md hover:shadow-2xl">
+          <div className="rounded-md h-48 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 hover:scale-105 duration-300">
+            <div className="flex flex-col justify-center h-full items-center bg-gray-800 rounded-md hover:shadow-2xl">
               <img
                 src={skill.logo}
                 alt={skill.name}
