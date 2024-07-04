@@ -41,7 +41,9 @@ export default function Home() {
             </strong>
           </div>
         </div>
-          <a id="scroll-btn" href="#about"></a>
+        <a id="scroll-btn" href="#about">
+          <span class="visually-hidden">Scroll down</span>
+        </a>
       </section>
       <section id="about" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
         <div className="my-40">
