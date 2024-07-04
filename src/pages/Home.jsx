@@ -26,20 +26,24 @@ export default function Home() {
           <title>Arno Boenders</title>
         </Helmet>
       </div>
-      <div
-        className="relative mb-10 min-h-screen w-full bg-cover md:bg-right xl:bg-center bg-custom-position"
-        style={{ backgroundImage: "url('/assets/img/hero-image.jpg')" }}
-      >
-        <div className="absolute inset-0 flex flex-col pl-4 md:pl-20 lg:pl-40 justify-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl uppercase text-white">
-            Arno Boenders
-          </h1>
-          <strong className="text-lg sm:text-xl md:text-3xl uppercase text-white">
-            Full-Stack Developer
-          </strong>
+
+      <section>
+        <div
+          className="relative mb-10 min-h-screen w-full bg-cover md:bg-right xl:bg-center bg-custom-position"
+          style={{ backgroundImage: "url('/assets/img/hero-image.jpg')" }}
+        >
+          <div className="absolute inset-0 flex flex-col pl-4 md:pl-20 lg:pl-40 justify-center">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl uppercase text-white">
+              Arno Boenders
+            </h1>
+            <strong className="text-lg sm:text-xl md:text-3xl uppercase text-white">
+              Full-Stack Developer
+            </strong>
+          </div>
         </div>
-      </div>
-      <div id="about" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+          <a id="scroll-btn" href="#about"></a>
+      </section>
+      <section id="about" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
         <div className="my-40">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">About me</h2>
           <div className="flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-20 mb-10 items-center md:items-start justify-between">
@@ -55,11 +59,12 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="my-40">
-          <h2 className="text-2xl sm:text-6xl my-10 font-bold">Skills</h2>
-          <Skills />
-        </div>
-        <div id="work"></div>
+      </section>
+      <section className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+        <h2 className="text-2xl sm:text-6xl my-10 font-bold">Skills</h2>
+        <Skills />
+      </section>
+      <section id="work" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
         <div className="my-40">
           <h2 className="text-2xl sm:text-6xl mb-5 font-bold">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 xl:gap-20 justify-items-center">
@@ -74,11 +79,13 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="my-40" id="contact">
+      </section>
+      <section id="contact" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+        <div className="my-40">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">Contact</h2>
           <EmailForm />
         </div>
-      </div>
+      </section>
     </div>
   );
 }

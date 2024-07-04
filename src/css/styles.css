@@ -4,3 +4,60 @@
     background-position: calc(100% - -16rem) center;
   }
 }
+
+/* scroll btn */
+a#scroll-btn {
+  position: absolute;
+  height: 5rem; 
+  width: 3.125rem; 
+  border: 0.25rem solid #ffffff; 
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 3.125rem; 
+  border-radius: 1.5rem; 
+}
+
+a#scroll-btn:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0.6rem; 
+  height: 0.6rem; 
+  width: 0.6rem; 
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(2.65rem); 
+    opacity: 0;
+  }
+}
+
+a#scroll-btn:after {
+  position: absolute;
+  content: "SCROLL DOWN";
+  width: 8rem; 
+  display: block;
+  text-align: center;
+  left: -2.7rem; 
+  bottom: -2rem; 
+  font-size: 0.8rem; 
+  color: #ffffff;
+  letter-spacing: 0.1875rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  a#scroll-btn {
+    font-size: 0.75rem; 
+  }
+}
