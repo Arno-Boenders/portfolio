@@ -15,6 +15,7 @@ export default function Home() {
         .replace(/-/g, " ")
         .replace(/\b\w/g, (char) => char.toUpperCase()),
       link: `/projects/${key}`,
+      technologies: project.technologies.join(", "),
     };
   });
 
@@ -68,7 +69,7 @@ export default function Home() {
       </section>
       <section id="work" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
         <div className="my-40">
-          <h2 className="text-2xl sm:text-6xl mb-5 font-bold">Projects</h2>
+          <h2 className="text-2xl sm:text-6xl my-10 font-bold">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 xl:gap-20 justify-items-center">
             {projects.map((project, index) => (
               <div key={index} className="flex justify-center w-full">
@@ -76,6 +77,7 @@ export default function Home() {
                   image={project.image}
                   title={project.title}
                   link={project.link}
+                  technologies={project.technologies}
                 />
               </div>
             ))}
