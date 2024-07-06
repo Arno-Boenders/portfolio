@@ -8,7 +8,7 @@ export default function Navigation() {
 
   return (
     isHomePage && (
-      <nav className="absolute right-0 left-0 flex justify-center md:justify-end items-center gap-8 md:pr-5 text-2xl h-20 z-10 backdrop-blur-sm bg-white/1">
+      <nav className="absolute right-0 left-0 flex justify-center md:justify-end items-center gap-8 md:pr-5 text-lg md:text-2xl h-20 z-10 backdrop-blur-sm bg-white/1">
         <NavLink className="hover:text-orange-300" to={ROUTES.home.path}>
           {ROUTES.home.title}
         </NavLink>
