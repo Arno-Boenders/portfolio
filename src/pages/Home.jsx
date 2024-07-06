@@ -84,8 +84,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contact" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
-        <div className="my-40">
+      <section
+        id="contact"
+        className="px-4 sm:mx-10 md:px-20 xl:mx-60 glassmorphism"
+      >
+        <div className="my-40 ">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">Contact</h2>
           <EmailForm />
         </div>
