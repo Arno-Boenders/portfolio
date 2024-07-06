@@ -46,7 +46,7 @@ export default function Home() {
           <span class="visually-hidden">Scroll down</span>
         </a>
       </section>
-      <section id="about" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+      <section id="about" className="px-4 sm:mx-10 md:px-20 lg:px-30 2xl:mx-60">
         <div className="my-40">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">About me</h2>
           <div className="flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-20 mb-10 items-center md:items-start justify-between">
@@ -63,11 +63,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+      <section className="px-4 sm:mx-10 md:px-20 lg:px-30 2xl:mx-60">
         <h2 className="text-2xl sm:text-6xl my-10 font-bold">Skills</h2>
         <Skills />
       </section>
-      <section id="work" className="px-4 sm:mx-10 md:px-20 xl:mx-60">
+      <section id="work" className="px-4 sm:mx-10 md:px-20 lg:px-30 2xl:mx-60">
         <div className="my-40">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 xl:gap-20 justify-items-center">
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="px-4 sm:mx-10 md:px-20 xl:mx-60 glassmorphism"
+        className="px-4 sm:mx-10 md:px-20 lg:px-30 2xl:mx-60 glassmorphism"
       >
         <div className="my-40 ">
           <h2 className="text-2xl sm:text-6xl my-10 font-bold">Contact</h2>
