@@ -65,3 +65,24 @@ a#scroll-btn:after {
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(242, 184, 122, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 4rem;
+  transition: all 0.3s;
+}
+.glassmorphism:hover {
+  box-shadow: 0 8px 32px 0 rgba(251, 146, 60, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

@@ -46,7 +46,7 @@ export default function EmailForm() {
 
   return (
     <div className=" flex items-center justify-center ">
-      <div className="rounded-lg shadow-md w-full max-w-md">
+      <div className="rounded-lg shadow-md w-full max-w-2xl">
         <h2 className="text-2xl font-bold mb-6 text-center">Send an Email</h2>
         {isLoading && (
           <div type="button" class="flex align-center justify-center gap-2" disabled>
@@ -79,7 +79,7 @@ export default function EmailForm() {
         )}
         <form onSubmit={handleSubmit}>
           <div className="mb-4 ">
-            <label className="block  font-medium mb-2" htmlFor="name">
+            <label className="block font-medium mb-2" htmlFor="name">
               Name
             </label>
             <input
