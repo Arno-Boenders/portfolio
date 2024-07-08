@@ -56,9 +56,19 @@ a#scroll-btn:after {
   font-weight: 600;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 48rem) {
   a#scroll-btn {
-    font-size: 0.75rem;
+    height: 4rem;
+    width: 2.5rem;
+    border: 0.125rem solid #ffffff;
+  }
+  a#scroll-btn:before {
+    height: 0.4rem;
+    width: 0.4rem;
+    top: 0.4rem;
+  }
+  a#scroll-btn:after {
+    font-size: 0.6rem;
   }
 }
 .visually-hidden {
